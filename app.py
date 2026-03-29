@@ -306,7 +306,7 @@ with st.sidebar:
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\Suraj\Desktop\combined_dataset.csv")
+    df = pd.read_csv(r"combined_dataset.csv")
     df['Profit'] = df['Final_Value'] - df['Total_Investment']
     df['ROI_%'] = (df['Profit'] / df['Total_Investment']) * 100
     return df
